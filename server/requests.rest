@@ -1,0 +1,19 @@
+GET http://localhost:5000/agents
+
+###
+
+PATCH http://localhost:5000/agents/60c1b9055374e972af10a67c
+Content-Type: application/json
+
+{
+    "email": "zhongze59@gmail.com",
+    "memberID": "3126622194"
+}
+
+###
+
+GET http://localhost:5000/agents/users?page=2&limit=3
+
+###
+
+GET http://localhost:5000/agents/searchUsers?username=ZhongzeChen
